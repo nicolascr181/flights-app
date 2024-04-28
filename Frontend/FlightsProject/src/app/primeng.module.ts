@@ -6,6 +6,7 @@ import { RippleModule } from 'primeng/ripple';
 import { InputTextModule } from 'primeng/inputtext';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { DropdownModule } from 'primeng/dropdown';
+import { DataViewModule } from 'primeng/dataview';
 
 @NgModule({
   declarations: [],
@@ -15,7 +16,8 @@ import { DropdownModule } from 'primeng/dropdown';
     RippleModule,
     InputTextModule,
     RadioButtonModule,
-    DropdownModule
+    DropdownModule,
+    DataViewModule
   ],
   bootstrap: [],
 })
