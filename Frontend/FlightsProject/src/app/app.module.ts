@@ -9,6 +9,7 @@ import { ListFlightsContainerComponent } from './components/list-flights-contain
 import { CardFlightsComponent } from './components/card-flights/card-flights.component';
 import { PrimeNGModule } from './primeng.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProductService } from './services/productservice';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     PrimeNGModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

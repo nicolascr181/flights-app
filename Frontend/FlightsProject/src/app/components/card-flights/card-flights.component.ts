@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Flight } from '../list-flights-container/interfaces';
 
 @Component({
   selector: 'app-card-flights',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class CardFlightsComponent {
 
+  @Input() flights! : Flight[]
+
+  constructor() {}
+
+  ngOnInit() {
+
+  }
+  
 }

@@ -1,1 +1,4 @@
-<p>card-flights works!</p>
+<ng-template ngFor let-flight [ngForOf]="flights">
+    <p class="m-1">{{flight.Origin}} - {{flight.Destination }}</p>
+    <p class="m-1">{{flight.Transport.FlightCarrier}} - {{flight.Transport.FlightNumber}}</p>
+</ng-template>

@@ -1,3 +1,24 @@
-<p>list-flights-container works!</p>
+<h2 class="text-center"> DCX Result</h2>
+<div class="card ">
+    <p-dataView #dv [value]="journeys">
+        <ng-template let-journey pTemplate="listItem">
+            <div class="col-12 ">
+                <div class="flex flex-column xl:flex-row xl:align-items-start p-1">
+                    <div
+                        class="flex flex-column sm:flex-row justify-content-between align-items-center sm:align-items-start flex-1 gap-4 ">
+                        <div class="flex flex-column align-items-center sm:align-items-start gap-4 ">
+                            <div class="text-2xl text-900 ">
+                                {{ journey.Journey.Origin}} - {{journey.Journey.Destination}}
 
-<app-card-flights></app-card-flights>
+                            </div>
+                            <span class="text-2xl">
+                                USD $ {{ journey.Journey.Price}}
+                            </span>
+                        </div>
+                        <app-card-flights [flights]="journey.Journey.Flights"></app-card-flights>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </p-dataView>
+</div>
