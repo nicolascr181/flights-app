@@ -1,4 +1,16 @@
 <ng-template ngFor let-flight [ngForOf]="flights">
-    <p class="m-1">{{flight.Origin}} - {{flight.Destination }}</p>
-    <p class="m-1">{{flight.Transport.FlightCarrier}} - {{flight.Transport.FlightNumber}}</p>
+    <div class="border-solid border-round surface-border">
+        <div class="px-7 py-1">
+            <div>
+                {{flight.Origin}} - {{flight.Destination }}
+
+            </div>
+
+        </div>
+        <div class="flex justify-content-end">
+            <div class="flex align-items-center justify-content-center">
+                {{flight.Transport.FlightCarrier}} {{flight.Transport.FlightNumber}}
+            </div>
+        </div>
+    </div>
 </ng-template>
