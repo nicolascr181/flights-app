@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
-
-namespace FlightsProject.Core.Entities;
-public class Transport
+﻿namespace FlightsProject.Core.Entities;
+public sealed class Transport
 {
   public string FlightCarrier { get; set; }
 
