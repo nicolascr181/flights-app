@@ -3,4 +3,4 @@
 @port=57679
 
 // List all journeys
-GET {{host}}:{{port}}/api/Values
+GET {{host}}:{{port}}/api/JourneyController

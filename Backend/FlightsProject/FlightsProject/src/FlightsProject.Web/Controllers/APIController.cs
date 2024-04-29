@@ -5,6 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FlightsProject.Web.Controllers;
 
+/// <summary>
+/// Base Controller
+/// </summary>
+/// 
+[ApiController]
 public class APIController: ControllerBase
 {
   protected IActionResult Problem(List<Error> errors)
