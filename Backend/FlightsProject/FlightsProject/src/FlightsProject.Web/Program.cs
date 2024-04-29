@@ -2,8 +2,21 @@
 using FlightsProject.Infrastructure;
 using FlightsProject.UseCases;
 using FlightsProject.Web.Extensions;
+using Serilog;
+using Serilog.Extensions.Logging;
+
+var logger = Log.Logger = new LoggerConfiguration()
+  .Enrich.FromLogContext()
+  .WriteTo.Console()
+  .CreateLogger();
+
+logger.Information("Starting web host");
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog((_, config) => config.ReadFrom.Configuration(builder.Configuration));
+var microsoftLogger = new SerilogLoggerFactory(logger)
+    .CreateLogger<Program>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
