@@ -8,14 +8,15 @@ using Microsoft.EntityFrameworkCore;
 namespace FlightsProject.Infrastructure.Persistence;
 public class ApplicationDbContext : DbContext, IApplicationDbContext, IUnitOfWork
 {
-  private readonly IPublisher _publisher;
+  private readonly IPublisher? _publisher;
 
-  public ApplicationDbContext(DbContextOptions options, IPublisher publisher) : base(options)
+  public ApplicationDbContext(DbContextOptions options, IPublisher? publisher) : base(options)
   {
-    _publisher = publisher ?? throw new ArgumentNullException(nameof(publisher));
+    _publisher = publisher;
   }
 
   public DbSet<Journey> Journeys { get ; set ; }
+  public DbSet<Flight> Flights { get ; set ; } 
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
@@ -35,11 +36,6 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext, IUnitOfWor
         .SelectMany(e => e.GetDomainEvents());
 
     var result = await base.SaveChangesAsync(cancellationToken);
-
-    foreach (var domainEvent in domainEvents)
-    {
-      await _publisher.Publish(domainEvent, cancellationToken);
-    }
 
     return result;
   }

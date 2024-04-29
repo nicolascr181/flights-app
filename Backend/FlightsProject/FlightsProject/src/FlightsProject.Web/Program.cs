@@ -1,5 +1,8 @@
 ﻿
+using System;
 using FlightsProject.Infrastructure;
+using FlightsProject.Infrastructure.Data;
+using FlightsProject.Infrastructure.Persistence;
 using FlightsProject.UseCases;
 using FlightsProject.Web.Extensions;
 using Serilog;
@@ -45,7 +48,28 @@ app.MapControllers();
 
 app.UseHttpsRedirection();
 
+SeedDatabase(app);
+
 app.Run();
+
+static void SeedDatabase(WebApplication app)
+{
+  using var scope = app.Services.CreateScope();
+  var services = scope.ServiceProvider;
+
+  try
+  {
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    //          context.Database.Migrate();
+    context.Database.EnsureCreated();
+    SeedData.Initialize(services);
+  }
+  catch (Exception ex)
+  {
+    var logger = services.GetRequiredService<ILogger<Program>>();
+    logger.LogError(ex, "An error occurred seeding the DB. {exceptionMessage}", ex.Message);
+  }
+}
 
 
 // Make the implicit Program.cs class public, so integration tests can reference the correct assembly for host building

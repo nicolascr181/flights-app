@@ -29,6 +29,7 @@ public static class DependencyInjection
             sp.GetRequiredService<ApplicationDbContext>());
 
     services.AddScoped<IJourneyRepository, JourneyRepository>();
+    services.AddScoped<IFlightRepository, FlightRepository>();
 
     return services;
   }

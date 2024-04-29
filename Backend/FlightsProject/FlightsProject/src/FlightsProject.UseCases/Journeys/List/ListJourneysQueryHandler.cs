@@ -2,11 +2,11 @@
 using FlightsProject.Core.Interfaces;
 
 namespace FlightsProject.UseCases.Journeys.List;
-internal sealed class ListJourneyQueryHandler : IRequestHandler<ListJourneysQuery, ErrorOr<IReadOnlyList<JourneyDTO>>>
+internal sealed class ListJourneysQueryHandler : IRequestHandler<ListJourneysQuery, ErrorOr<IReadOnlyList<JourneyDTO>>>
 {
   private readonly IJourneyRepository _journeyRepository;
 
-  public ListJourneyQueryHandler(IJourneyRepository journeyRepository)
+  public ListJourneysQueryHandler(IJourneyRepository journeyRepository)
   {
     _journeyRepository = journeyRepository ?? throw new ArgumentNullException(nameof(journeyRepository));
   }

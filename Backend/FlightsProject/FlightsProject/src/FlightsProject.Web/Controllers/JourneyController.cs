@@ -15,7 +15,12 @@ public class JourneyController : APIController
   {
     _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
   }
-  // GET: api/<ValuesController>
+  
+
+  /// <summary>
+  /// List all journeys without filters
+  /// </summary>
+  /// <returns></returns>
   [HttpGet]
   public async Task<IActionResult> ListJourneys()
   {
