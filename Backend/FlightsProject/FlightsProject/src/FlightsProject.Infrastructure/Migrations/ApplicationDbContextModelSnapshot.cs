@@ -24,25 +24,22 @@ namespace FlightsProject.Infrastructure.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Destination")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<Guid?>("JourneyId")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Origin")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<double?>("Price")
                         .HasColumnType("REAL");
 
-                    b.Property<Guid?>("TransportId")
-                        .HasColumnType("TEXT");
-
                     b.HasKey("Id");
 
                     b.HasIndex("JourneyId");
-
-                    b.HasIndex("TransportId");
 
                     b.ToTable("Flights");
                 });
@@ -69,34 +66,37 @@ namespace FlightsProject.Infrastructure.Migrations
                     b.ToTable("Journeys");
                 });
 
-            modelBuilder.Entity("FlightsProject.Core.Entities.Transport", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("FlightCarrier")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("FlightNumber")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Transport");
-                });
-
             modelBuilder.Entity("FlightsProject.Core.Entities.Flight", b =>
                 {
                     b.HasOne("FlightsProject.Core.Entities.Journey", null)
                         .WithMany("Flights")
                         .HasForeignKey("JourneyId");
 
-                    b.HasOne("FlightsProject.Core.Entities.Transport", "Transport")
-                        .WithMany()
-                        .HasForeignKey("TransportId");
+                    b.OwnsOne("FlightsProject.Core.Entities.Transport", "Transport", b1 =>
+                        {
+                            b1.Property<Guid>("FlightId")
+                                .HasColumnType("TEXT");
+
+                            b1.Property<string>("FlightCarrier")
+                                .IsRequired()
+                                .HasColumnType("TEXT");
+
+                            b1.Property<string>("FlightNumber")
+                                .IsRequired()
+                                .HasColumnType("TEXT");
+
+                            b1.Property<Guid>("Id")
+                                .HasColumnType("TEXT");
+
+                            b1.HasKey("FlightId");
+
+                            b1.ToTable("Flights");
+
+                            b1.ToJson("TRANSPORT");
+
+                            b1.WithOwner()
+                                .HasForeignKey("FlightId");
+                        });
 
                     b.Navigation("Transport");
                 });

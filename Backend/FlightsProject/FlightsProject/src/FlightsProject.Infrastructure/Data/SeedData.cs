@@ -15,6 +15,7 @@ public static class SeedData
     using (var dbContext = new ApplicationDbContext(
         serviceProvider.GetRequiredService<DbContextOptions<ApplicationDbContext>>(),null))
     {
+
       if (dbContext.Flights.Any()) return;
 
       PopulateTestData(dbContext);
@@ -32,8 +33,8 @@ public static class SeedData
       foreach (Flight flight in flights)
       {
         dbContext.Add(flight);
-        dbContext.SaveChanges();
       }
+      dbContext.SaveChanges();
     }
 
   }

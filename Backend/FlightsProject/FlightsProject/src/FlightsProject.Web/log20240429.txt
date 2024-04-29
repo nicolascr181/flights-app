@@ -378,3 +378,1187 @@ FROM "Flights" AS "f"
 2024-04-29 01:10:03.056 -05:00 [INF] Executed action FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web) in 207.0176ms
 2024-04-29 01:10:03.058 -05:00 [INF] Executed endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
 2024-04-29 01:10:03.066 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/api/Flight - 200 null application/json; charset=utf-8 256.1909ms
+2024-04-29 01:13:20.510 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:13:20.542 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:13:20.559 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 01:13:20.582 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 01:13:20.769 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 01:13:21.035 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:13:31.293 -05:00 [INF] Now listening on: https://localhost:57679
+2024-04-29 01:13:31.348 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 01:13:31.350 -05:00 [INF] Hosting environment: Development
+2024-04-29 01:13:31.352 -05:00 [INF] Content root path: C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Web
+2024-04-29 01:13:32.356 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-04-29 01:13:32.646 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html;charset=utf-8 295.8808ms
+2024-04-29 01:13:32.708 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-04-29 01:13:32.708 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 01:13:32.737 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 29.1537ms
+2024-04-29 01:13:32.779 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.7592ms
+2024-04-29 01:13:32.840 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-04-29 01:13:32.928 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.6508ms
+2024-04-29 01:13:44.376 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/api/Flight - null null
+2024-04-29 01:13:44.393 -05:00 [INF] Executing endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 01:13:44.407 -05:00 [INF] Route matched with {action = "ListFlights", controller = "Flight"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListFlights() on controller FlightsProject.Web.Controllers.FlightController (FlightsProject.Web).
+2024-04-29 01:13:44.460 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:13:44.487 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FlightsProject.UseCases.Flights.FlightDTO, FlightsProject.UseCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 01:13:44.515 -05:00 [INF] Executed action FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web) in 99.39ms
+2024-04-29 01:13:44.517 -05:00 [INF] Executed endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 01:13:44.525 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/api/Flight - 200 null application/json; charset=utf-8 148.5639ms
+2024-04-29 01:14:05.567 -05:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:14:05.607 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:14:05.625 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 01:14:05.639 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 01:14:05.768 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 01:14:05.921 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:14:06.010 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:06.024 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:06.029 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:06.031 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:06.036 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:06.041 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:06.044 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:06.047 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:06.050 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:06.053 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:06.055 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:06.058 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:06.060 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:14:47.694 -05:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:14:47.757 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:14:47.773 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 01:14:47.794 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 01:14:47.942 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 01:14:48.123 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:14:58.962 -05:00 [INF] Now listening on: https://localhost:57679
+2024-04-29 01:14:58.991 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 01:14:58.994 -05:00 [INF] Hosting environment: Development
+2024-04-29 01:14:58.996 -05:00 [INF] Content root path: C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Web
+2024-04-29 01:15:00.186 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-04-29 01:15:00.375 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html;charset=utf-8 196.7386ms
+2024-04-29 01:15:00.438 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-04-29 01:15:00.438 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 01:15:00.449 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 10.8817ms
+2024-04-29 01:15:00.486 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.2372ms
+2024-04-29 01:15:00.549 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-04-29 01:15:00.618 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.7308ms
+2024-04-29 01:15:04.150 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/api/Flight - null null
+2024-04-29 01:15:04.165 -05:00 [INF] Executing endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 01:15:04.177 -05:00 [INF] Route matched with {action = "ListFlights", controller = "Flight"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListFlights() on controller FlightsProject.Web.Controllers.FlightController (FlightsProject.Web).
+2024-04-29 01:15:04.217 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:15:04.234 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FlightsProject.UseCases.Flights.FlightDTO, FlightsProject.UseCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 01:15:04.250 -05:00 [INF] Executed action FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web) in 65.4644ms
+2024-04-29 01:15:04.255 -05:00 [INF] Executed endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 01:15:04.261 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/api/Flight - 200 null application/json; charset=utf-8 111.8796ms
+2024-04-29 01:23:22.132 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:23:22.168 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:23:22.182 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 01:23:22.198 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 01:23:22.335 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 01:23:22.554 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:26:22.009 -05:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:26:22.050 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:26:22.071 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 01:26:22.090 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 01:26:22.302 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 01:26:22.471 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:37:07.673 -05:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:37:07.716 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:37:07.733 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 01:37:07.751 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 01:37:07.995 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 01:37:08.215 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:37:08.561 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.566 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.568 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.570 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.571 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.573 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.575 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.577 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.579 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.581 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.583 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.584 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.585 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:37:08.589 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.590 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.592 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.593 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.595 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.596 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.598 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.600 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.601 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.603 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.604 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.606 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.607 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:37:08.915 -05:00 [INF] Now listening on: https://localhost:57679
+2024-04-29 01:37:08.954 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 01:37:08.956 -05:00 [INF] Hosting environment: Development
+2024-04-29 01:37:08.958 -05:00 [INF] Content root path: C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Web
+2024-04-29 01:37:10.295 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-04-29 01:37:10.589 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html;charset=utf-8 301.0275ms
+2024-04-29 01:37:10.649 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-04-29 01:37:10.649 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 01:37:10.664 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 15.2568ms
+2024-04-29 01:37:10.716 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.7818ms
+2024-04-29 01:37:10.829 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-04-29 01:37:10.910 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.2823ms
+2024-04-29 01:37:22.801 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/api/Flight - null null
+2024-04-29 01:37:22.819 -05:00 [INF] Executing endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 01:37:22.850 -05:00 [INF] Route matched with {action = "ListFlights", controller = "Flight"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListFlights() on controller FlightsProject.Web.Controllers.FlightController (FlightsProject.Web).
+2024-04-29 01:37:22.926 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:37:22.963 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FlightsProject.UseCases.Flights.FlightDTO, FlightsProject.UseCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 01:37:22.993 -05:00 [INF] Executed action FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web) in 131.503ms
+2024-04-29 01:37:22.999 -05:00 [INF] Executed endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 01:37:23.008 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/api/Flight - 200 null application/json; charset=utf-8 207.5679ms
+2024-04-29 01:42:52.339 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:42:52.389 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:42:52.420 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 01:42:52.477 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 01:42:52.678 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 01:42:52.864 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:42:53.027 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.032 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.034 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.036 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.037 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.039 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.042 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.044 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.050 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.054 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.057 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.079 -05:00 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.084 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:42:53.275 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.278 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.283 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.285 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.288 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.290 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.293 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.295 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.297 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.299 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.301 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.302 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.304 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:42:53.309 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.313 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.316 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.318 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.321 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.323 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.327 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.330 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.333 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.336 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.338 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.342 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.344 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:42:53.602 -05:00 [INF] Now listening on: https://localhost:57679
+2024-04-29 01:42:53.662 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 01:42:53.663 -05:00 [INF] Hosting environment: Development
+2024-04-29 01:42:53.665 -05:00 [INF] Content root path: C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Web
+2024-04-29 01:42:55.882 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-04-29 01:42:56.083 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html;charset=utf-8 202.4535ms
+2024-04-29 01:42:56.095 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 01:42:56.102 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 7.4571ms
+2024-04-29 01:42:56.146 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-04-29 01:42:56.198 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.495ms
+2024-04-29 01:42:56.303 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-04-29 01:42:56.406 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 102.5897ms
+2024-04-29 01:43:02.051 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/api/Flight - null null
+2024-04-29 01:43:02.064 -05:00 [INF] Executing endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 01:43:02.084 -05:00 [INF] Route matched with {action = "ListFlights", controller = "Flight"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListFlights() on controller FlightsProject.Web.Controllers.FlightController (FlightsProject.Web).
+2024-04-29 01:43:04.779 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:54:07.603 -05:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:54:07.645 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 01:54:07.667 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 01:54:07.687 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 01:54:07.950 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 01:54:08.132 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:54:08.229 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.235 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.238 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.239 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.240 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.242 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.244 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.245 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.246 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.247 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.249 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.250 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.252 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 01:54:08.393 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.396 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.399 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.400 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.401 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.402 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.404 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.405 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.406 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.407 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.408 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.411 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.412 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 01:54:08.414 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.416 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.417 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.418 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.420 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.421 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.423 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.424 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.426 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.427 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.428 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.430 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.431 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 01:54:08.578 -05:00 [INF] Now listening on: https://localhost:57679
+2024-04-29 01:54:08.618 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 01:54:08.621 -05:00 [INF] Hosting environment: Development
+2024-04-29 01:54:08.624 -05:00 [INF] Content root path: C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Web
+2024-04-29 01:54:09.178 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-04-29 01:54:09.374 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html;charset=utf-8 202.8266ms
+2024-04-29 01:54:09.385 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 01:54:09.396 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 11.5455ms
+2024-04-29 01:54:09.438 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-04-29 01:54:09.491 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.1296ms
+2024-04-29 01:54:09.589 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-04-29 01:54:09.658 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.3832ms
+2024-04-29 01:54:13.449 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/api/Flight - null null
+2024-04-29 01:54:13.466 -05:00 [INF] Executing endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 01:54:13.491 -05:00 [INF] Route matched with {action = "ListFlights", controller = "Flight"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListFlights() on controller FlightsProject.Web.Controllers.FlightController (FlightsProject.Web).
+2024-04-29 01:54:13.580 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 01:54:13.596 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FlightsProject.UseCases.Flights.FlightDTO, FlightsProject.UseCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 01:54:13.631 -05:00 [INF] Executed action FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web) in 130.1625ms
+2024-04-29 01:54:13.635 -05:00 [INF] Executed endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 01:54:13.644 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/api/Flight - 200 null application/json; charset=utf-8 194.5983ms
+2024-04-29 02:05:44.727 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:05:44.768 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:05:44.792 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:05:44.819 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 02:05:44.969 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 02:05:45.207 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 02:05:45.362 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.366 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.368 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.371 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.373 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.375 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.376 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.378 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.379 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.380 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.382 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.384 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.386 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Flights"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-04-29 02:05:45.554 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.556 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.558 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.559 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.561 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.562 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.563 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.565 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.567 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.569 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.571 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.572 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.574 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 2), @p2='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transport" ("Id", "FlightCarrier", "FlightNumber")
+VALUES (@p0, @p1, @p2);
+2024-04-29 02:05:45.577 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.578 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.580 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.581 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.583 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.584 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.586 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.587 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.589 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.590 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.591 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.593 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.594 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 3), @p2='?' (DbType = Guid), @p3='?' (Size = 3), @p4='?' (DbType = Double), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:05:45.771 -05:00 [INF] Now listening on: https://localhost:57679
+2024-04-29 02:05:45.813 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 02:05:45.815 -05:00 [INF] Hosting environment: Development
+2024-04-29 02:05:45.816 -05:00 [INF] Content root path: C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Web
+2024-04-29 02:05:46.438 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-04-29 02:05:46.635 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html;charset=utf-8 197.9951ms
+2024-04-29 02:05:46.645 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 02:05:46.653 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 8.1446ms
+2024-04-29 02:05:46.696 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-04-29 02:05:46.750 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.3973ms
+2024-04-29 02:05:46.855 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-04-29 02:05:46.952 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.2598ms
+2024-04-29 02:05:50.706 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/api/Flight - null null
+2024-04-29 02:05:50.717 -05:00 [INF] Executing endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 02:05:50.740 -05:00 [INF] Route matched with {action = "ListFlights", controller = "Flight"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListFlights() on controller FlightsProject.Web.Controllers.FlightController (FlightsProject.Web).
+2024-04-29 02:05:50.799 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TransportId"
+FROM "Flights" AS "f"
+2024-04-29 02:05:50.818 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FlightsProject.UseCases.Flights.FlightDTO, FlightsProject.UseCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 02:05:50.848 -05:00 [INF] Executed action FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web) in 97.9294ms
+2024-04-29 02:05:50.851 -05:00 [INF] Executed endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 02:05:50.861 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/api/Flight - 200 null application/json; charset=utf-8 155.4555ms
+2024-04-29 02:10:23.583 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:10:23.611 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:10:23.622 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:10:23.635 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 02:10:23.808 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 02:10:24.020 -05:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."Transport"
+FROM "Flights" AS "f"
+2024-04-29 02:10:24.046 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'FlightsProject.Infrastructure.Persistence.ApplicationDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: f.Transport'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: f.Transport'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2024-04-29 02:10:24.074 -05:00 [ERR] An error occurred seeding the DB. SQLite Error 1: 'no such column: f.Transport'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: f.Transport'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at FlightsProject.Infrastructure.Data.SeedData.Initialize(IServiceProvider serviceProvider) in C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Infrastructure\Data\SeedData.cs:line 19
+   at Program.<<Main>$>g__SeedDatabase|0_1(WebApplication app) in C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Web\Program.cs:line 65
+2024-04-29 02:10:24.329 -05:00 [INF] Now listening on: https://localhost:57679
+2024-04-29 02:10:24.391 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 02:10:24.394 -05:00 [INF] Hosting environment: Development
+2024-04-29 02:10:24.395 -05:00 [INF] Content root path: C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Web
+2024-04-29 02:10:26.377 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-04-29 02:10:26.601 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html;charset=utf-8 227.5869ms
+2024-04-29 02:10:26.612 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 02:10:26.620 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 8.4848ms
+2024-04-29 02:10:26.670 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-04-29 02:10:26.744 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.7409ms
+2024-04-29 02:10:26.827 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-04-29 02:10:26.912 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.057ms
+2024-04-29 02:13:24.059 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:13:24.079 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:13:24.088 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:13:24.097 -05:00 [INF] Applying migration '20240429071249_TransportColumn'.
+2024-04-29 02:13:24.148 -05:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "Transport";
+2024-04-29 02:15:18.709 -05:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:15:18.776 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:15:19.042 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:15:19.174 -05:00 [INF] Applying migration '20240429071249_TransportColumn'.
+2024-04-29 02:15:19.298 -05:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "Transport";
+2024-04-29 02:18:05.874 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:18:05.899 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:18:05.913 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:18:05.926 -05:00 [INF] Reverting migration '20240429060000_SecMigration'.
+2024-04-29 02:18:06.003 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Flights" RENAME TO "Flight";
+2024-04-29 02:18:06.004 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_Flights_TransportId";
+2024-04-29 02:18:06.005 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Flight_TransportId" ON "Flight" ("TransportId");
+2024-04-29 02:18:06.005 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_Flights_JourneyId";
+2024-04-29 02:18:06.005 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Flight_JourneyId" ON "Flight" ("JourneyId");
+2024-04-29 02:18:06.005 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ef_temp_Flight" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Flight" PRIMARY KEY,
+    "Destination" TEXT NULL,
+    "JourneyId" TEXT NULL,
+    "Origin" TEXT NULL,
+    "Price" REAL NULL,
+    "TransportId" TEXT NULL,
+    CONSTRAINT "FK_Flight_Journeys_JourneyId" FOREIGN KEY ("JourneyId") REFERENCES "Journeys" ("Id"),
+    CONSTRAINT "FK_Flight_Transport_TransportId" FOREIGN KEY ("TransportId") REFERENCES "Transport" ("Id")
+);
+2024-04-29 02:18:06.006 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ef_temp_Flight" ("Id", "Destination", "JourneyId", "Origin", "Price", "TransportId")
+SELECT "Id", "Destination", "JourneyId", "Origin", "Price", "TransportId"
+FROM "Flight";
+2024-04-29 02:18:06.012 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys = 0;
+2024-04-29 02:18:06.012 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "Flight";
+2024-04-29 02:18:06.012 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "ef_temp_Flight" RENAME TO "Flight";
+2024-04-29 02:18:06.014 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys = 1;
+2024-04-29 02:18:06.014 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Flight_JourneyId" ON "Flight" ("JourneyId");
+2024-04-29 02:18:06.015 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Flight_TransportId" ON "Flight" ("TransportId");
+2024-04-29 02:18:06.015 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "__EFMigrationsHistory"
+WHERE "MigrationId" = '20240429060000_SecMigration';
+2024-04-29 02:18:06.018 -05:00 [INF] Reverting migration '20240429022313_FirstMigration'.
+2024-04-29 02:18:06.019 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "Flight";
+2024-04-29 02:18:06.019 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "Journeys";
+2024-04-29 02:18:06.019 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "Transport";
+2024-04-29 02:18:06.019 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "__EFMigrationsHistory"
+WHERE "MigrationId" = '20240429022313_FirstMigration';
+2024-04-29 02:18:19.712 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:18:19.738 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:20:10.897 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:20:10.920 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:20:10.928 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:20:10.937 -05:00 [INF] Applying migration '20240429071853_Initialize'.
+2024-04-29 02:20:10.988 -05:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_Flights_TransportId";
+2024-04-29 02:21:00.931 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:21:00.952 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:21:00.962 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:21:00.969 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 02:21:20.961 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:21:20.987 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:24:01.944 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:24:01.974 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:24:01.993 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:24:02.006 -05:00 [INF] Applying migration '20240429072144_Initialize'.
+2024-04-29 02:24:02.077 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Journeys" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Journeys" PRIMARY KEY,
+    "Origin" TEXT NOT NULL,
+    "Destination" TEXT NOT NULL,
+    "Price" REAL NULL
+);
+2024-04-29 02:24:02.079 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Flights" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Flights" PRIMARY KEY,
+    "Origin" TEXT NULL,
+    "Destination" TEXT NULL,
+    "Price" REAL NULL,
+    "Transport" TEXT NULL,
+    "JourneyId" TEXT NULL,
+    CONSTRAINT "FK_Flights_Journeys_JourneyId" FOREIGN KEY ("JourneyId") REFERENCES "Journeys" ("Id")
+);
+2024-04-29 02:24:02.081 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Flights_JourneyId" ON "Flights" ("JourneyId");
+2024-04-29 02:24:02.084 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240429072144_Initialize', '8.0.2');
+2024-04-29 02:24:02.301 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 02:24:02.520 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Flights" AS "f")
+2024-04-29 02:24:22.217 -05:00 [ERR] An error occurred seeding the DB. Unexpected character encountered while parsing value: {. Path '[0].Transport', line 6, position 15.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: {. Path '[0].Transport', line 6, position 15.
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at FlightsProject.Infrastructure.Data.SeedData.PopulateTestData(ApplicationDbContext dbContext) in C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Infrastructure\Data\SeedData.cs:line 29
+   at FlightsProject.Infrastructure.Data.SeedData.Initialize(IServiceProvider serviceProvider) in C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Infrastructure\Data\SeedData.cs:line 21
+   at Program.<<Main>$>g__SeedDatabase|0_1(WebApplication app) in C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Web\Program.cs:line 65
+2024-04-29 02:25:02.517 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:25:02.561 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:25:02.578 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:25:02.596 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 02:25:02.761 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 02:25:02.924 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Flights" AS "f")
+2024-04-29 02:25:32.161 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:25:32.190 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:25:32.200 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:25:32.211 -05:00 [INF] Reverting migration '20240429072144_Initialize'.
+2024-04-29 02:25:32.231 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "Flights";
+2024-04-29 02:25:32.231 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "Journeys";
+2024-04-29 02:25:32.231 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "__EFMigrationsHistory"
+WHERE "MigrationId" = '20240429072144_Initialize';
+2024-04-29 02:25:46.875 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:25:46.902 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:50:43.603 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:50:43.625 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:50:43.632 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:50:43.641 -05:00 [INF] Applying migration '20240429074944_Initialize'.
+2024-04-29 02:50:43.683 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Journeys" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Journeys" PRIMARY KEY,
+    "Origin" TEXT NOT NULL,
+    "Destination" TEXT NOT NULL,
+    "Price" REAL NULL
+);
+2024-04-29 02:50:43.684 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Flights" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Flights" PRIMARY KEY,
+    "Origin" TEXT NOT NULL,
+    "Destination" TEXT NOT NULL,
+    "Price" REAL NULL,
+    "JourneyId" TEXT NULL,
+    "TRANSPORT" TEXT NULL,
+    CONSTRAINT "FK_Flights_Journeys_JourneyId" FOREIGN KEY ("JourneyId") REFERENCES "Journeys" ("Id")
+);
+2024-04-29 02:50:43.684 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Flights_JourneyId" ON "Flights" ("JourneyId");
+2024-04-29 02:50:43.684 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240429074944_Initialize', '8.0.2');
+2024-04-29 02:52:39.423 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:52:39.454 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:52:39.473 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:52:39.486 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 02:52:39.649 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 02:52:39.854 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Flights" AS "f")
+2024-04-29 02:53:47.199 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:53:47.255 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:53:47.269 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:53:47.288 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 02:53:47.433 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 02:53:47.590 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Flights" AS "f")
+2024-04-29 02:55:09.240 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:55:09.265 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-04-29 02:55:09.280 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-04-29 02:55:09.299 -05:00 [INF] No migrations were applied. The database is already up to date.
+2024-04-29 02:55:09.476 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-04-29 02:55:09.688 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Flights" AS "f")
+2024-04-29 02:55:23.626 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.633 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.637 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.638 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.640 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.641 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.642 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.644 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.645 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.647 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.650 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.652 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.653 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 88), @p1='?' (DbType = Guid), @p2='?' (Size = 3), @p3='?' (DbType = Guid), @p4='?' (Size = 3), @p5='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Flights" ("TRANSPORT", "Id", "Destination", "JourneyId", "Origin", "Price")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-29 02:55:23.897 -05:00 [INF] Now listening on: https://localhost:57679
+2024-04-29 02:55:23.943 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 02:55:23.945 -05:00 [INF] Hosting environment: Development
+2024-04-29 02:55:23.948 -05:00 [INF] Content root path: C:\Users\Nicolas\Documents\Desarrollo Local\flights-app\Backend\FlightsProject\FlightsProject\src\FlightsProject.Web
+2024-04-29 02:55:24.806 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-04-29 02:55:25.154 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html;charset=utf-8 353.9789ms
+2024-04-29 02:55:25.163 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 02:55:25.177 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 13.2882ms
+2024-04-29 02:55:25.211 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-04-29 02:55:25.292 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 80.6499ms
+2024-04-29 02:55:25.384 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-04-29 02:55:25.478 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 95.1235ms
+2024-04-29 02:55:34.740 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/api/Flight - null null
+2024-04-29 02:55:34.756 -05:00 [INF] Executing endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 02:55:34.782 -05:00 [INF] Route matched with {action = "ListFlights", controller = "Flight"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListFlights() on controller FlightsProject.Web.Controllers.FlightController (FlightsProject.Web).
+2024-04-29 02:55:34.956 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Destination", "f"."JourneyId", "f"."Origin", "f"."Price", "f"."TRANSPORT"
+FROM "Flights" AS "f"
+2024-04-29 02:55:35.011 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FlightsProject.UseCases.Flights.FlightDTO, FlightsProject.UseCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-29 02:55:35.033 -05:00 [INF] Executed action FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web) in 245.5107ms
+2024-04-29 02:55:35.036 -05:00 [INF] Executed endpoint 'FlightsProject.Web.Controllers.FlightController.ListFlights (FlightsProject.Web)'
+2024-04-29 02:55:35.044 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/api/Flight - 200 null application/json; charset=utf-8 303.6496ms

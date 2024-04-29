@@ -16,7 +16,7 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext, IUnitOfWor
   }
 
   public DbSet<Journey> Journeys { get ; set ; }
-  public DbSet<Flight> Flights { get ; set ; } 
+  public DbSet<Flight> Flights { get ; set ; }
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FlightsProject.Infrastructure.Migrations;
 
   /// <inheritdoc />
-  public partial class FirstMigration : Migration
+  public partial class Initialize : Migration
   {
       /// <inheritdoc />
       protected override void Up(MigrationBuilder migrationBuilder)
@@ -26,65 +26,39 @@ namespace FlightsProject.Infrastructure.Migrations;
               });
 
           migrationBuilder.CreateTable(
-              name: "Transport",
+              name: "Flights",
               columns: table => new
               {
                   Id = table.Column<Guid>(type: "TEXT", nullable: false),
-                  FlightCarrier = table.Column<string>(type: "TEXT", nullable: false),
-                  FlightNumber = table.Column<string>(type: "TEXT", nullable: false)
-              },
-              constraints: table =>
-              {
-                  table.PrimaryKey("PK_Transport", x => x.Id);
-              });
-
-          migrationBuilder.CreateTable(
-              name: "Flight",
-              columns: table => new
-              {
-                  Id = table.Column<Guid>(type: "TEXT", nullable: false),
-                  Origin = table.Column<string>(type: "TEXT", nullable: true),
-                  Destination = table.Column<string>(type: "TEXT", nullable: true),
+                  Origin = table.Column<string>(type: "TEXT", nullable: false),
+                  Destination = table.Column<string>(type: "TEXT", nullable: false),
                   Price = table.Column<double>(type: "REAL", nullable: true),
-                  TransportId = table.Column<Guid>(type: "TEXT", nullable: true),
-                  JourneyId = table.Column<Guid>(type: "TEXT", nullable: true)
+                  JourneyId = table.Column<Guid>(type: "TEXT", nullable: true),
+                  TRANSPORT = table.Column<string>(type: "TEXT", nullable: true)
               },
               constraints: table =>
               {
-                  table.PrimaryKey("PK_Flight", x => x.Id);
+                  table.PrimaryKey("PK_Flights", x => x.Id);
                   table.ForeignKey(
-                      name: "FK_Flight_Journeys_JourneyId",
+                      name: "FK_Flights_Journeys_JourneyId",
                       column: x => x.JourneyId,
                       principalTable: "Journeys",
                       principalColumn: "Id");
-                  table.ForeignKey(
-                      name: "FK_Flight_Transport_TransportId",
-                      column: x => x.TransportId,
-                      principalTable: "Transport",
-                      principalColumn: "Id");
               });
 
           migrationBuilder.CreateIndex(
-              name: "IX_Flight_JourneyId",
-              table: "Flight",
+              name: "IX_Flights_JourneyId",
+              table: "Flights",
               column: "JourneyId");
-
-          migrationBuilder.CreateIndex(
-              name: "IX_Flight_TransportId",
-              table: "Flight",
-              column: "TransportId");
       }
 
       /// <inheritdoc />
       protected override void Down(MigrationBuilder migrationBuilder)
       {
           migrationBuilder.DropTable(
-              name: "Flight");
+              name: "Flights");
 
           migrationBuilder.DropTable(
               name: "Journeys");
-
-          migrationBuilder.DropTable(
-              name: "Transport");
       }
   }
