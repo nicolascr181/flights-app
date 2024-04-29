@@ -1,12 +1,16 @@
 ﻿
 using FlightsProject.Infrastructure;
+using FlightsProject.UseCases;
+using FlightsProject.Web.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddApplication();
 
 if (builder.Environment.IsDevelopment())
 {
@@ -16,10 +20,10 @@ if (builder.Environment.IsDevelopment())
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
-{
-  app.UseDeveloperExceptionPage();
+{ 
   app.UseSwagger();
   app.UseSwaggerUI();
+  app.ApplyMigrations();
 }
 
 app.MapControllers();

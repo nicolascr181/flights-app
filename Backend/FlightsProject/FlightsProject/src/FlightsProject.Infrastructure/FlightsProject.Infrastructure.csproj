@@ -23,8 +23,4 @@
     <ProjectReference Include="..\FlightsProject.Core\FlightsProject.Core.csproj" />
     <ProjectReference Include="..\FlightsProject.UseCases\FlightsProject.UseCases.csproj" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <Folder Include="Persistence\Configuration\" />
-  </ItemGroup>
 </Project>

@@ -4,6 +4,7 @@
     <PackageReference Include="Ardalis.Result" />
     <PackageReference Include="ErrorOr" />
     <PackageReference Include="FluentValidation" />
+    <PackageReference Include="FluentValidation.AspNetCore" />
     <PackageReference Include="MediatR" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
   </ItemGroup>

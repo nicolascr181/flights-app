@@ -1,4 +1,4 @@
-﻿using MediatR;
+﻿using Application.Common.Behaviors;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace FlightsProject.UseCases;
@@ -11,11 +11,12 @@ public static class DependencyInjection
     });
 
     services.AddScoped(
-        typeof(IPipelineBehavior<,>)
-        //typeof(ValidationBehavior<,>)
+        typeof(IPipelineBehavior<,>),
+        typeof(ValidationBehavior<,>)
     );
 
-    //services.AddValidatorsFromAssemblyContaining<ApplicationAssemblyReference>();
+    services.AddValidatorsFromAssemblyContaining<ApplicationAssemblyReference>();
+
 
     return services;
   }
