@@ -6,6 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UseCases\**" />
+    <EmbeddedResource Remove="UseCases\**" />
+    <None Remove="UseCases\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Core\Services\ToDoItemSearchService_GetAllIncompleteItems.cs" />
     <Compile Remove="Core\Services\ToDoItemSearchService_GetNextIncompleteItem.cs" />
   </ItemGroup>
@@ -34,7 +40,6 @@
 
   <ItemGroup>
     <Folder Include="Core\Services\" />
-    <Folder Include="UseCases\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -26,6 +26,8 @@ if (app.Environment.IsDevelopment())
   app.ApplyMigrations();
 }
 
+app.UseExceptionHandler("/error");
+
 app.MapControllers();
 
 app.UseHttpsRedirection();

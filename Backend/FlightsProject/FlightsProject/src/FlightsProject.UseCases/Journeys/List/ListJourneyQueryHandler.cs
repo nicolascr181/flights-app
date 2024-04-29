@@ -12,13 +12,23 @@ internal sealed class ListJourneyQueryHandler : IRequestHandler<ListJourneysQuer
   }
   public async Task<ErrorOr<IReadOnlyList<JourneyDTO>>> Handle(ListJourneysQuery command, CancellationToken cancellationToken)
   {
-    IReadOnlyList<Journey> journeys = await _journeyRepository.GetJourneysAsync();
+    try
+    {
+      IReadOnlyList<Journey> journeys = await _journeyRepository.GetJourneysAsync();
 
-    return journeys.Select(journey => new JourneyDTO(
-            journey.Origin,
-            journey.Destination,
-            journey.Price,
-            journey.Flights
-        )).ToList();
+      return journeys.Select(journey => new JourneyDTO(
+              journey.Origin,
+              journey.Destination,
+              journey.Price,
+              journey.Flights
+          )).ToList();
+    }
+    catch(Exception ex)
+    {
+      
+      return Error.Failure("List Journey Failure ",ex.Message);
+
+    }
+    
   }
 }
