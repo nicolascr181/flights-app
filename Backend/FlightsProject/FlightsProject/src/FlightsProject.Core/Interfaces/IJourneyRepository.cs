@@ -3,5 +3,5 @@
 namespace FlightsProject.Core.Interfaces;
 public interface IJourneyRepository
 {
-  Task<Journey[]> GetJourneysAsync();
+  Task<List<Journey>> GetJourneysAsync();
 }

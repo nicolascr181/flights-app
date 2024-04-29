@@ -1,9 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.1.3" />
+  <ItemGroup>
+    <Compile Remove="Data\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <None Remove="Data\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Ardalis.SharedKernel" />
-    <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" />
     <PackageReference Include="MailKit" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" PrivateAssets="all" />
@@ -21,8 +25,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Data\Config\" />
-    <Folder Include="Data\Migrations\" />
-    <Folder Include="Data\Queries\" />
+    <Folder Include="Persistence\Configuration\" />
   </ItemGroup>
 </Project>
