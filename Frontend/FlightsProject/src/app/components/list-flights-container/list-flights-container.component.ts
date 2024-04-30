@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Flight, Journey } from './interfaces';
-import { ProductService } from 'src/app/services/productservice';
+import { Component, Input, OnInit } from '@angular/core';
+import { IJourney } from './interfaces';
 
 @Component({
   selector: 'app-list-flights-container',
@@ -8,21 +7,13 @@ import { ProductService } from 'src/app/services/productservice';
   styleUrls: ['./list-flights-container.component.css']
 })
 export class ListFlightsContainerComponent implements OnInit {
-  journeys!: Journey[];
-  origin!:string;
-  destin!:string;
-  flights! : Array<Flight>
+  @Input() journeys?: IJourney[];
 
-  constructor(private productService: ProductService) {}
+  constructor() {
+  }
 
   ngOnInit() {
-    this.productService.getProducts().
-    then((journeys:Journey[]) => {
-      this.journeys = journeys
-      // this.origin = journey.Journey.Origin
-      // this.destin = journey.Journey.Destination
-      // this.flights = journey.Journey.Flights
-    })
+   
 }
 
 }

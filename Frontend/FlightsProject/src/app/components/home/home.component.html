@@ -1,7 +1,16 @@
 <section class="flex flex-row align-items-center justify-content-center">
     <div class="m-4">
         <h1 class="text-center">DCX</h1>
-        <app-search-flights></app-search-flights>
-        <app-list-flights-container></app-list-flights-container>
+        <app-search-flights (searchEvent)="search($event)"></app-search-flights>
+        <h2 class="text-center"> DCX Result</h2>
+        <ng-container *ngFor="let response of responses">
+            <h3> {{ response.origin}} - {{response.destination}} </h3>
+            <app-list-flights-container [journeys]="response.journeys">
+            </app-list-flights-container>
+        </ng-container>
     </div>
 </section>
+
+<div class="card">
+    <p-toast></p-toast>
+</div>

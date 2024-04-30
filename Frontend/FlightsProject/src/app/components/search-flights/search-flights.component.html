@@ -4,19 +4,19 @@
             <input type="text" pInputText formControlName="origin" placeholder="Origin" />
         </div>
         <div class="field">
-            <input type="text" pInputText formControlName="destin" placeholder="Destination" />
+            <input type="text" pInputText formControlName="destination" placeholder="Destination" />
         </div>
     </div>
 
     <div class="formgrid grid">
         <div *ngFor="let tripType of tripTypes" class="field-radiobutton col-4">
-            <p-radioButton [inputId]="tripType" [value]="tripType" formControlName="selectedTripType"></p-radioButton>
+            <p-radioButton [inputId]="tripType" [value]="tripType" formControlName="tripType"></p-radioButton>
             <label [for]="tripType" class="ml-2">{{ tripType }}</label>
         </div>
 
         <div class="field col-4">
-            <p-dropdown formControlName="selectedCurrency" [options]="currencies"
-                placeholder="Select a Currency"></p-dropdown>
+            <p-dropdown formControlName="currencyType" [options]="currencies" optionLabel="name"
+                optionValue="code"></p-dropdown>
         </div>
     </div>
 

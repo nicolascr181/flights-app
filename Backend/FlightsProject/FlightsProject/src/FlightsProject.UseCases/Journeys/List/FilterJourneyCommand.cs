@@ -11,4 +11,4 @@ public record FilterJourneyCommand
   string CurrencyType,
   [Required]
   string TripType
-) : IRequest<ErrorOr<IReadOnlyList<JourneyDTO>>>;
+) : IRequest<ErrorOr<List<JourneyDTO>>>;

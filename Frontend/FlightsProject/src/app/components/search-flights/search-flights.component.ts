@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
-import { Currency, TripType } from './enums';
+import { TripType } from './enums';
+import { ICurrency } from '../list-flights-container/interfaces';
 
 @Component({
   selector: 'app-search-flights',
@@ -10,22 +11,29 @@ import { Currency, TripType } from './enums';
 export class SearchFlightsComponent implements OnInit{
 
   form: FormGroup;
-  currencies: Currency[] = Object.values(Currency);
+ 
+  currencies: ICurrency[] = [ 
+    {name : "USD" ,code :"en-US"},
+    {name : "YEN" ,code :"ja-JP"},
+    {name : "EUR" ,code :"es-ES"},
+   ]
   tripTypes: TripType[] = Object.values(TripType);
+  @Output() searchEvent: EventEmitter<any> = new EventEmitter();
+  
  
   constructor(private fb: FormBuilder){
     this.form = this.fb.group({
       origin: ['', Validators.required],
-      destin: ['', Validators.required],
-      selectedTripType: [TripType.Oneway,Validators.required],
-      selectedCurrency: [Currency.USD,Validators.required]
+      destination: ['', Validators.required],
+      tripType: [TripType.Oneway,Validators.required],
+      currencyType: [this.currencies[0].code,Validators.required]
     });
   }
   ngOnInit(): void {
   }
 
   search(){
-    console.log(this.form.getRawValue())
+    this.searchEvent.emit(this.form.getRawValue());
   }
 
 }

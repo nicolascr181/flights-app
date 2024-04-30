@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Flight } from '../list-flights-container/interfaces';
+import { IFlight } from '../list-flights-container/interfaces';
 
 @Component({
   selector: 'app-card-flights',
@@ -8,7 +8,7 @@ import { Flight } from '../list-flights-container/interfaces';
 })
 export class CardFlightsComponent {
 
-  @Input() flights! : Flight[]
+  @Input() flights? : IFlight[]
 
   constructor() {}
 

@@ -8,6 +8,7 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { DropdownModule } from 'primeng/dropdown';
 import { DataViewModule } from 'primeng/dataview';
 import { CardModule } from 'primeng/card';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   declarations: [],
@@ -19,7 +20,8 @@ import { CardModule } from 'primeng/card';
     RadioButtonModule,
     DropdownModule,
     DataViewModule,
-    CardModule
+    CardModule,
+    ToastModule
   ],
   bootstrap: [],
 })

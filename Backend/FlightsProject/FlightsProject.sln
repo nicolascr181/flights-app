@@ -3,19 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsProject.Core", "FlightsProject\src\FlightsProject.Core\FlightsProject.Core.csproj", "{0B30C98C-36CD-448E-BE28-C7E442566AE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightsProject.Core", "FlightsProject\src\FlightsProject.Core\FlightsProject.Core.csproj", "{0B30C98C-36CD-448E-BE28-C7E442566AE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsProject.Infrastructure", "FlightsProject\src\FlightsProject.Infrastructure\FlightsProject.Infrastructure.csproj", "{BB8F3FF4-AA51-4FD1-BF4B-010CA34C00FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightsProject.Infrastructure", "FlightsProject\src\FlightsProject.Infrastructure\FlightsProject.Infrastructure.csproj", "{BB8F3FF4-AA51-4FD1-BF4B-010CA34C00FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsProject.UseCases", "FlightsProject\src\FlightsProject.UseCases\FlightsProject.UseCases.csproj", "{84613A54-BC60-4B4E-901D-E3C2B36FBFF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightsProject.UseCases", "FlightsProject\src\FlightsProject.UseCases\FlightsProject.UseCases.csproj", "{84613A54-BC60-4B4E-901D-E3C2B36FBFF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsProject.Web", "FlightsProject\src\FlightsProject.Web\FlightsProject.Web.csproj", "{F9D63C26-B998-445A-B21C-B964575CBD86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightsProject.Web", "FlightsProject\src\FlightsProject.Web\FlightsProject.Web.csproj", "{F9D63C26-B998-445A-B21C-B964575CBD86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsProject.FunctionalTests", "FlightsProject\tests\FlightsProject.FunctionalTests\FlightsProject.FunctionalTests.csproj", "{58CF7EFA-4AC1-406A-801E-0D02B8ECCD93}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsProject.IntegrationTests", "FlightsProject\tests\FlightsProject.IntegrationTests\FlightsProject.IntegrationTests.csproj", "{A0BF1668-B471-4FAC-90CA-E0EA562C7D16}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsProject.UnitTests", "FlightsProject\tests\FlightsProject.UnitTests\FlightsProject.UnitTests.csproj", "{595A829F-3EB4-4C39-859A-691B2CE04EAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightsProject.UnitTests", "FlightsProject\tests\FlightsProject.UnitTests\FlightsProject.UnitTests.csproj", "{595A829F-3EB4-4C39-859A-691B2CE04EAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,14 +35,6 @@ Global
 		{F9D63C26-B998-445A-B21C-B964575CBD86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9D63C26-B998-445A-B21C-B964575CBD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9D63C26-B998-445A-B21C-B964575CBD86}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58CF7EFA-4AC1-406A-801E-0D02B8ECCD93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58CF7EFA-4AC1-406A-801E-0D02B8ECCD93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58CF7EFA-4AC1-406A-801E-0D02B8ECCD93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58CF7EFA-4AC1-406A-801E-0D02B8ECCD93}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A0BF1668-B471-4FAC-90CA-E0EA562C7D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0BF1668-B471-4FAC-90CA-E0EA562C7D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0BF1668-B471-4FAC-90CA-E0EA562C7D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0BF1668-B471-4FAC-90CA-E0EA562C7D16}.Release|Any CPU.Build.0 = Release|Any CPU
 		{595A829F-3EB4-4C39-859A-691B2CE04EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{595A829F-3EB4-4C39-859A-691B2CE04EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{595A829F-3EB4-4C39-859A-691B2CE04EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU

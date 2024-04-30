@@ -9,7 +9,8 @@ import { ListFlightsContainerComponent } from './components/list-flights-contain
 import { CardFlightsComponent } from './components/card-flights/card-flights.component';
 import { PrimeNGModule } from './primeng.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ProductService } from './services/productservice';
+import { JourneyService } from './services/journey.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,9 +25,10 @@ import { ProductService } from './services/productservice';
     BrowserAnimationsModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    PrimeNGModule
+    PrimeNGModule,
+    HttpClientModule
   ],
-  providers: [ProductService],
+  providers: [JourneyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
