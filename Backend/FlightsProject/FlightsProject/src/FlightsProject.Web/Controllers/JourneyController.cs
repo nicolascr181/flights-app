@@ -18,13 +18,13 @@ public class JourneyController : APIController
   
 
   /// <summary>
-  /// List all journeys without filters
+  /// List all of the journeys for the specific origin and destination
   /// </summary>
   /// <returns></returns>
-  [HttpGet]
-  public async Task<IActionResult> ListJourneys()
+  [HttpPost]
+  public async Task<IActionResult> ListJourneys([FromBody] FilterJourneyCommand command)
   {
-    var journeysResult = await _mediator.Send(new ListJourneysQuery());
+    var journeysResult = await _mediator.Send(command);
 
     return journeysResult.Match(
         journey => Ok(journey),

@@ -1,25 +1,40 @@
 ﻿using FlightsProject.Core.Entities;
 using FlightsProject.Core.Interfaces;
+using FlightsProject.UseCases.Graphs;
 
 namespace FlightsProject.UseCases.Journeys.List;
-internal sealed class ListJourneysQueryHandler : IRequestHandler<ListJourneysQuery, ErrorOr<IReadOnlyList<JourneyDTO>>>
+internal sealed class ListJourneysQueryHandler : IRequestHandler<FilterJourneyCommand, ErrorOr<IReadOnlyList<JourneyDTO>>>
 {
-  private readonly IJourneyRepository _journeyRepository;
+  private readonly IFlightRepository _flightRepository;
 
-  public ListJourneysQueryHandler(IJourneyRepository journeyRepository)
+  public ListJourneysQueryHandler(IFlightRepository flightRepository)
   {
-    _journeyRepository = journeyRepository ?? throw new ArgumentNullException(nameof(journeyRepository));
+    _flightRepository = flightRepository ?? throw new ArgumentNullException(nameof(flightRepository));
   }
-  public async Task<ErrorOr<IReadOnlyList<JourneyDTO>>> Handle(ListJourneysQuery command, CancellationToken cancellationToken)
+  public async Task<ErrorOr<IReadOnlyList<JourneyDTO>>> Handle(FilterJourneyCommand command, CancellationToken cancellationToken)
   {
     try
     {
-      IReadOnlyList<Journey> journeys = await _journeyRepository.GetJourneysAsync();
+
+      string source = command.Origin;
+      string destination = command.Destination;
+
+      IReadOnlyList<Flight> flights = await _flightRepository.GetFlightsAsync();
+
+      List<Flight> flightList = flights.ToList();
+      var journeyFlights = Graph.FindAllPaths(flightList, source, destination);
+
+      List<Journey> journeys= new List<Journey>();
+      foreach (var flightsAux in journeyFlights)
+      {
+        Journey journey = new Journey { Origin = source, Destination = destination, Price = 0, Flights = flightsAux};
+        journeys.Add(journey);
+      }
 
       return journeys.Select(journey => new JourneyDTO(
               journey.Origin,
               journey.Destination,
-              journey.Price,
+              journey.TotalPrice,
               journey.Flights
           )).ToList();
     }

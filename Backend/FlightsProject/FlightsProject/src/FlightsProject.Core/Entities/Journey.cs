@@ -20,6 +20,8 @@ public sealed class Journey: AggregateRoot
   }
 
   public Journey() { }
+
+  public double TotalPrice => Flights?.Sum(flight => flight?.Price ?? 0) ?? 0;
 }
 
 
